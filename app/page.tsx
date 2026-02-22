@@ -7,7 +7,7 @@ export default function Home() {
       {/* Header */}
       <header style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '3.5rem' }}>
         <span style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: 600, fontSize: '1rem', color: '#1a1a1a' }}>
-          Jane Smith
+          Gareth MacLeod
         </span>
         <nav>
           <Link href="/blog/first-post">Writing</Link>
@@ -39,7 +39,7 @@ export default function Home() {
 
           {/* Bio */}
           <div style={{ flex: 1, minWidth: 220 }}>
-            <h1 style={{ marginTop: 0, fontSize: '1.4rem' }}>Jane Smith</h1>
+            <h1 style={{ marginTop: 0, fontSize: '1.4rem' }}>Gareth MacLeod</h1>
             <p style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontSize: '0.88rem', color: '#555', marginBottom: '0.75rem' }}>
               Associate Professor of Computer Science · State University
             </p>
