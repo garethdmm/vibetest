@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'On the Gap Between Formal Models and Real Systems — Jane Smith',
+  title: 'On the Gap Between Formal Models and Real Systems — Gareth MacLeod',
 };
 
 export default function FirstPost() {
@@ -11,7 +11,7 @@ export default function FirstPost() {
       {/* Header */}
       <header style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '3.5rem' }}>
         <Link href="/" style={{ fontFamily: 'system-ui, -apple-system, sans-serif', fontWeight: 600, fontSize: '1rem', color: '#1a1a1a', textDecoration: 'none' }}>
-          Jane Smith
+          Gareth MacLeod
         </Link>
         <nav>
           <Link href="/">Writing</Link>
