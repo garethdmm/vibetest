@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -17,25 +18,14 @@ export default function Home() {
       {/* Profile */}
       <main>
         <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem', marginBottom: '2.5rem', flexWrap: 'wrap' }}>
-          {/* Avatar placeholder */}
-          <div
-            style={{
-              width: 120,
-              height: 120,
-              borderRadius: '50%',
-              background: '#d4d4d4',
-              flexShrink: 0,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#999',
-              fontFamily: 'system-ui, -apple-system, sans-serif',
-              fontSize: '0.75rem',
-              letterSpacing: '0.03em',
-            }}
-          >
-            photo
-          </div>
+          {/* Avatar */}
+          <Image
+            src="/me.png"
+            alt="Profile photo"
+            width={120}
+            height={120}
+            style={{ borderRadius: '50%', flexShrink: 0, objectFit: 'cover' }}
+          />
 
           {/* Bio */}
           <div style={{ flex: 1, minWidth: 220 }}>
@@ -69,6 +59,12 @@ export default function Home() {
             Writing
           </h2>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+            <li style={{ marginBottom: '0.75rem', display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: '1rem', flexWrap: 'wrap' }}>
+              <Link href="/blog/how-to-feel-when-your-startup-feels-easy">
+                How to feel when your startup feels easy
+              </Link>
+              <span className="post-meta">Mar 2024</span>
+            </li>
             <li style={{ marginBottom: '0.75rem', display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', gap: '1rem', flexWrap: 'wrap' }}>
               <Link href="/blog/first-post">
                 On the Gap Between Formal Models and Real Systems
